@@ -1,38 +1,136 @@
-.App {
-  text-align: center;
+*{
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+.container{
+  width: 100%;
+  height: 100vh;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+
+  background-image: url("./images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  background-color: hsl(225, 100%, 94%);
+}
+
+@media screen and (max-width: 768px) {
+  body{
+    background: hsl(225, 100%, 94%);
+  }
+  .container{
+    background: hsl(225, 100%, 94%);
+  }
+}
+
+.order-summary{
+  max-width: min-content;
+  max-height: 700px;
+
+  border-radius: 16px;
+  background-color: hsl(225, 100%, 98%);
+}
+
+.order-summary img{
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.order-summary-info{
+  padding: 54px 50px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 28px;
+}
+
+.order-summary-title{
+  font-size: 28px;
+  font-weight: 900;
+  color: hsl(223, 47%, 23%);
+}
+
+.order-summary-desc{
+  color: hsl(224, 23%, 55%);
+}
+
+.order-summary-plan-button{
+  width: 100%;
+
+  padding: 25px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background-color: hsl(225, 90%, 95%);
+
+  border-radius: 16px;
+}
+
+.order-summary-plan-button-info{
+  width: 100%;
+  padding: 0 20px;
+  text-align: start;
+  line-height: 25px;
+}
+
+.order-summary-plan-button-plan{
+  font-weight: bold;
+}
+
+.order-summary-plan-button-price{
+  color: hsl(224, 23%, 55%);
+}
+
+.order-summary-plan-button-change{
+  cursor: pointer;
+  text-decoration: underline;
+  color: hsl(245, 75%, 52%);
+
+  transition: all ease-in-out 0.3s;
+}
+
+.order-summary-plan-button-change:hover, .order-summary-plan-button-change:active{
+  color: #766CF1;
+  transition: all ease-in-out 0.3s;
+  text-decoration: none;
+}
+
+.order-summary-payment-button{
+  width: 100%;
+  padding: 15px;
+
+  background-color: hsl(245, 75%, 52%);
+  border: 0;
+  border-radius: 16px;
+  box-shadow: 0 20px 20px hsl(245, 75%, 52%, 0.2);
+  
   color: white;
+  font-weight: 900;
+
+  transition: all ease-in-out 0.3s;
 }
 
-.App-link {
-  color: #61dafb;
+.order-summary-payment-button:hover, .order-summary-payment-button:active{
+  background-color: #766CF1;
+  transition: all ease-in-out 0.3s;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.order-summary-cancel{
+  color: hsl(224, 23%, 55%);
+  cursor: pointer;
+  font-weight: bold;
+  
+  transition: all ease-in-out 0.3s;
+}
+
+.order-summary-cancel:hover, .order-summary-cancel:active {
+  color: hsl(223, 47%, 23%);
+  transition: all ease-in-out 0.3s;
 }
