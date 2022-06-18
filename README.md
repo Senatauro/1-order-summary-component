@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/simple-order-summary-component-made-with-react-4tGEuuS4Ll)
+- Live Site URL: [Add live site URL here](https://master--rad-kataifi-c170a3.netlify.app/)
 
 ## My process
 
